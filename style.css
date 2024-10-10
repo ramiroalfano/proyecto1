@@ -1,0 +1,184 @@
+
+body {  
+    background-color: #343a40; /* Color de fondo oscuro */  
+    color: #ffffff; /* Color de texto blanco */  
+}  
+
+.card {  
+    border-radius: 10px;  
+    background-color: #495057; /* Color de las tarjetas */  
+    color: #ffffff; /* Color de texto en las tarjetas */  
+}  
+
+.card-img-top {  
+    border-top-left-radius: 10px;  
+    border-top-right-radius: 10px;  
+}  
+
+.card-title {  
+    color: #ffffff;
+    text-align: center; 
+
+}
+.h-carousel {
+    height: 800px;
+}
+
+
+.car-img {  
+    position: relative; /* Mantiene el contenedor posicionado */  
+    height: 800px; /* Ajusta la altura como necesites */  
+    background-image: url('./img/IMG-20240714-WA0007.jpg'), url('./img/IMG-20240818-WA0001.jpg');  
+    background-size: 50% 100%, 50% 100%; /* Cada imagen ocupa la mitad del contenedor en el ancho */  
+    background-position: left center, right center; /* La primera imagen a la izquierda, la segunda a la derecha */  
+    background-repeat: no-repeat; /* Evita que las imágenes se repitan */  
+}  
+
+.grad-img {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    background: rgba(0, 0, 0, 0.5); /* Gradiente oscuro sobre las imágenes para mejorar la legibilidad */  
+}
+.offcanvas-body {
+    background-color: black;
+}
+.container mt-5 {
+    overflow: scroll;
+}
+card-title{
+    font-size: 10px;
+}
+
+
+.card {  
+    border-radius: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    padding: 20px;  
+    width: 300px;  
+}  
+
+.cardmaps{  
+    display: flex;  
+    border-radius: 15px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    width: 100%;  
+    max-width: 1500px;  
+    overflow: hidden;  
+}  
+
+.carousel {  
+    flex: 1; /* Para que ocupe más espacio */  
+}  
+
+.carousel img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 15px 0 0 15px;  
+}  
+
+.content {  
+    flex-basis: 30%; /* Ocupa el 30% del ancho */  
+    padding: 20px;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+}  
+
+.title {  
+    font-size: 20px;  
+    margin: 0;  
+}  
+
+.text {  
+    margin-top: 10px;  
+    font-size: 16px;  
+}  
+
+.buttonflecha {  
+    background-color: #007BFF;  
+    border: none;  
+    border-radius: 5px;  
+    color: white;  
+    cursor: pointer;  
+    padding: 10px 15px;  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+}  
+
+.modal {  
+    display: none; /* Oculto por defecto */  
+    position: fixed;  
+    z-index: 10; /* Asegura que esté encima de otros elementos */  
+    left: 0;  
+    top: 0;  
+    width: 100%;  
+    height: 100%;  
+    overflow: auto;  
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */  
+}  
+
+.modal-content {  
+    position: relative;  
+    margin: auto;  
+    padding: 20px;  
+    background-color: white;  
+    border-radius: 10px;  
+    max-width: 700px; /* Ancho máximo del modal */  
+}  
+
+.close {  
+    position: absolute;  
+    top: 10px;  
+    right: 20px;  
+    font-size: 28px;  
+    cursor: pointer;  
+}  
+
+button {  
+    background-color: #007BFF;  
+    border: none;  
+    border-radius: 5px;  
+    color: white;  
+    cursor: pointer;  
+    padding: 10px 15px;  
+}  
+
+button:hover {  
+    background-color: #0056b3;  
+}  
+.image-container {  
+    flex: 1; /* Para que ocupe más espacio */  
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */  
+}  
+
+.image-container img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 15px 0 0 15px;  
+}  
+#deleteBtn {  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    color: white;  
+    background-color: #dc3545; /* Rojo */  
+    border: none;  
+    border-radius: 10px;  
+    cursor: pointer;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    transition: background-color 0.3s; 
+    justify-content: center;  
+            align-items: center;
+}  
+
+#deleteBtn:hover {  
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */  
+} 
+.parrafofinal{
+    margin-top: 20px;
+            justify-content: center;  
+            align-items: center;  
+        }  

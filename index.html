@@ -1,0 +1,236 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Nuestros Recuerdos</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="path/to/sweetalert2.min.css">  
+    <script src="path/to/sweetalert2.min.js"></script>  
+</head>  
+<body>  
+    <h1 class="text-center">Emi</h1>  
+    <!--carrousel-->
+    <section>  
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">  
+            <div class="carousel-inner">  
+                <div class="carousel-item active">  
+                    <div class="car-img">  
+                        <div class="grad-img">  
+                            <div class="carousel-caption d-md-block text-center" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">  
+                                <h3 class="mb-3">Nuestras Fotos</h3>  
+                                <p class="mb-4">Bueno mi vida, como ya llevamos 6 meses, se me ocurrió hacer esto para ir agregando nuestras fotos y recuerdos.</p>  
+                                <div class="d-grid gap-2 d-md-block">  
+                                    <button class="btn btn-danger mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">  
+                                        No quiero tener más fotos con vos :(  
+                                    </button>  
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">  
+                                        <div class="offcanvas-header">  
+                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>  
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>  
+                                        </div>  
+                                        <div class="offcanvas-body">  
+                                            <div>  
+                                                aaaaa así te quería agarrar, así que no quieres más fotos juntos ...  
+                                            </div>  
+                                            <img src="./img/perro.jpeg" alt="perro" class="img-fluid mt-3">  
+                                        </div>  
+                                    </div>  
+                                </div>  
+                            </div>  
+                        </div>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </section>
+    <!--cards-->
+    <h1>Bueno aca hice unos albunes con algunas de las fotos que tenemos</h1>
+
+<div class="container mt-5">  
+    <div class="row">  
+        <!-- Tarjeta 1 -->  
+        <div class="col-md-4">  
+            <div class="card mb-4">  
+                <div id="carouselRecuerdos1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">  
+                    <div class="carousel-inner">  
+                        <div class="carousel-item active">  
+                            <img src="./img/IMG-20240502-WA0001.jpg" class="d-block w-100" alt="Recuerdo 1" data-bs-toggle="modal" data-bs-target="#modalRecuerdos1" onclick="setModalImage(1, 1)">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20240502-WA0002.jpg" class="d-block w-100" alt="Recuerdo 2" data-bs-toggle="modal" data-bs-target="#modalRecuerdos1" onclick="setModalImage(1, 2)">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20240502-WA0003.jpg" class="d-block w-100" alt="Recuerdo 3" data-bs-toggle="modal" data-bs-target="#modalRecuerdos1" onclick="setModalImage(1, 3)">  
+                        </div>  
+                    </div>  
+                </div>  
+                <div class="card-body">  
+                    <h5 class="card-title">Estas son Nuestras primeras fotos</h5>  
+                </div>  
+            </div>  
+        </div>  
+
+        <!-- Tarjeta 2 -->  
+        <div class="col-md-4">  
+            <div class="card mb-4">  
+                <div id="carouselRecuerdos2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">  
+                    <div class="carousel-inner">  
+                        <div class="carousel-item active">  
+                            <img src="./img/fc3.jpg" class="d-block w-100" alt="Recuerdo 6">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/fc1.jpg" class="d-block w-100" alt="Recuerdo 4">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/fc2.jpg" class="d-block w-100" alt="Recuerdo 5">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/fc4.jpg" class="d-block w-100" alt="Recuerdo 6">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/fc5.jpg" class="d-block w-100" alt="Recuerdo 6">  
+                        </div>  
+                    </div>  
+                </div>  
+                <div class="card-body">  
+                    <h5 class="card-title">FC</h5>  
+                </div>  
+            </div>  
+        </div>  
+
+        <!-- Tarjeta 3 -->  
+        <div class="col-md-4">  
+            <div class="card mb-4">  
+                <div id="carouselRecuerdos3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">  
+                    <div class="carousel-inner">  
+                        <div class="carousel-item active">  
+                            <img src="./img/1.jpg" class="d-block w-100" alt="Recuerdo 7">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/2.jpg" class="d-block w-100" alt="Recuerdo 8">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/3.jpg" class="d-block w-100" alt="Recuerdo 9">  
+                        </div>  
+                    </div>  
+                </div>  
+                <div class="card-body">  
+                    <h5 class="card-title">esta son nuestras segundas</h5>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+
+    <div class="row">  
+        <!-- Tarjeta 4 -->  
+        <div class="col-md-4">  
+            <div class="card mb-4">  
+                <div id="carouselRecuerdos4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">  
+                    <div class="carousel-inner">  
+                        <div class="carousel-item active">  
+                            <img src="./img/IMG-20240818-WA0001.jpg" class="d-block w-100" alt="Recuerdo 6">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20240818-WA0002.jpg" class="d-block w-100" alt="Recuerdo 4">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG_20240811_200559_829.webp" class="d-block w-100" alt="Recuerdo 5">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20240929-WA0014.jpg" class="d-block w-100" alt="Recuerdo 6">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20240929-WA0016.jpg" class="d-block w-100" alt="Recuerdo 6">  
+                        </div> 
+                    </div>  
+                </div>  
+                <div class="card-body">  
+                    <h5 class="card-title">W/Favoritas</h5>  
+                </div>  
+            </div>  
+        </div>  
+
+        <!-- Tarjeta 5 -->  
+        <div class="col-md-4">  
+            <div class="card mb-4">  
+                <div id="carouselRecuerdos5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">  
+                    <div class="carousel-inner">  
+                        <div class="carousel-item active">  
+                            <img src="./img/IMG_20240921_124008391.jpg" class="d-block w-100" alt="Recuerdo 7">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20240527-WA0010.jpg" class="d-block w-100" alt="Recuerdo 8">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG_20240921_133622499.jpg" class="d-block w-100" alt="Recuerdo 9">  
+                        </div> 
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20240502-WA0002.jpg" class="d-block w-100" alt="Recuerdo 9">  
+                        </div> 
+                    </div>  
+                </div>  
+                <div class="card-body">  
+                    <h5 class="card-title">JEJE</h5>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</div>
+<!--maps-->
+<div class="cardmaps">  
+    <div class="image-container" onclick="openModal()">  
+        <img id="fixed-image" src="./img/a6630347-80fa-4b22-99c5-2d4cdcf8577c.jpg" alt="Imagen Fija" />  
+    </div>  
+    <div class="content">  
+        <h2 class="title">Aca van las fotos de las primeras vacaciones juntos</h2>  
+        <p class="text">si queres hace click en la imagen para ver algunos de los lugares jeje</p>  
+        <p class="text">Primera hay una foto en potre que no cuenta como vacas pero si jaja</p>  
+    </div>  
+</div>  
+
+<div id="modal" class="modal" onclick="closeModal()">  
+    <div class="modal-content" onclick="event.stopPropagation()">  
+        <span class="close" onclick="closeModal()">&times;</span>  
+        <img id="carousel-image" src="./img/IMG-20240718-WA0006.jpg" alt="Imagen de Carrusel" />  
+        <button class="buttonflecha" onclick="changeImage(-1)">&#10094;</button>  
+        <button class="buttonflecha" onclick="changeImage(1)">&#10095;</button>  
+    </div>  
+</div>  
+<!--parrafo-->
+<div class="parrafofinal">
+<h2 class="card-title">Esto es casi todo </h2>
+<p class="card-title">Bueno mi vida esto lo arme para tener en algun lado las fotos que nos vamos sacando y tenerlos como recuerdos, Felices 6 meses espero que sean muchisimos mas te amo mucho y gracias por todo</p>
+<button id="deleteBtn">Si no te gusto se puede borrar la pagina haciendo click aca</button> 
+</div>
+<script>  
+    document.getElementById('deleteBtn').addEventListener('click', function() {  
+        Swal.fire({  
+            title: "Estas segura que lo queres borrar?",  
+            text: "mira que no hay vuelta atras!",  
+            icon: "warning",  
+            showCancelButton: true,  
+            confirmButtonColor: "#3085d6",  
+            cancelButtonColor: "#d33",  
+            confirmButtonText: "si!"  
+        }).then((result) => {  
+            if (result.isConfirmed) {  
+                Swal.fire({  
+                    title: "Ya esta ya se borro...!",  
+                    text: "naa mentira no se puede borrar jajajaja",  
+                    icon: "success"  
+                });  
+            }  
+        });  
+    });  
+</script>  
+
+<!--scripts-->
+<script src="script.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>  
+</html>
