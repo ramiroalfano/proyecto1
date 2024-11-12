@@ -182,3 +182,33 @@ button:hover {
             justify-content: center;  
             align-items: center;  
         }  
+.tituloGaleria{
+    text-align: center;
+}
+.accordion-body { 
+    background-color: #343a40; 
+    display: flex;  
+    align-items: center;
+    color: #fff; /* Centra verticalmente el contenido */  
+}  
+.image-containeraccordion {  
+    width: 25%; /* 25% del ancho del contenedor padre */  
+    display: none; /* Oculta la imagen por defecto */  
+    margin-left: 20px; /* Espacio entre el texto y la imagen */  
+    text-align: center; /* Centra el contenido dentro del contenedor */  
+}  
+.show-image {  
+    display: block; /* Muestra la imagen cuando el acordeón se expande */  
+}  
+img {  
+    width: 200px; /* Ancho de la imagen */  
+    height: 200px; /* Alto de la imagen */  
+} 
+.imgMaps {
+    width: 500px; /* Ancho de la imagen */  
+    height: 500px;
+}
+.deleteBtn {
+    justify-content: center;
+    align-items: center;
+}

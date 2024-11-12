@@ -32,3 +32,19 @@ setInterval(() => {
         changeImage(1);  
     }  
 }, 9000);
+
+
+    $(document).ready(function () {  
+        $('.accordion-button').on('click', function () {  
+            const target = $(this).data('bs-target');  
+            const imageId = target.replace('collapse', 'image'); // Cambia el ID del colapso al ID de la imagen  
+            const isVisible = $(imageId).hasClass('show-image');  
+
+            // Ocultar todas las imágenes  
+            $('.image-container').removeClass('show-image');  
+            // Mostrar la imagen correspondiente solo si no estaba visible  
+            if (!isVisible) {  
+                $(imageId).addClass('show-image');  
+            }  
+        });  
+    });  

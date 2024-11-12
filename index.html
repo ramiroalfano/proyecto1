@@ -21,6 +21,7 @@
                             <div class="carousel-caption d-md-block text-center" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px;">  
                                 <h3 class="mb-3">Nuestras Fotos</h3>  
                                 <p class="mb-4">Bueno mi vida, como ya llevamos 6 meses, se me ocurrió hacer esto para ir agregando nuestras fotos y recuerdos.</p>  
+                                <button ><a class="nav-link" href="home/galeria.html">Subir fotos</a></button>
                                 <div class="d-grid gap-2 d-md-block">  
                                     <button class="btn btn-danger mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">  
                                         No quiero tener más fotos con vos :(  
@@ -176,12 +177,32 @@
                 </div>  
             </div>  
         </div>  
+
+        <!-- Tarjeta 6 -->  
+        <div class="col-md-4">  
+            <div class="card mb-4">  
+                <div id="carouselRecuerdos6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">  
+                    <div class="carousel-inner">  
+                        <div class="carousel-item active">  
+                            <img src="./img/IMG-20241014-WA0000.jpg" class="d-block w-100" alt="Recuerdo 7">  
+                        </div>  
+                        <div class="carousel-item">  
+                            <img src="./img/IMG-20241014-WA0008.jpg" class="d-block w-100" alt="Recuerdo 9">  
+                        </div> 
+
+                    </div>  
+                </div>  
+                <div class="card-body">  
+                    <h5 class="card-title">Potre</h5>  
+                </div>  
+            </div>  
+        </div>  
     </div>  
 </div>
 <!--maps-->
 <div class="cardmaps">  
     <div class="image-container" onclick="openModal()">  
-        <img id="fixed-image" src="./img/a6630347-80fa-4b22-99c5-2d4cdcf8577c.jpg" alt="Imagen Fija" />  
+        <img class="imgMaps" id="fixed-image" src="./img/a6630347-80fa-4b22-99c5-2d4cdcf8577c.jpg" alt="Imagen Fija" />  
     </div>  
     <div class="content">  
         <h2 class="title">Aca van las fotos de las primeras vacaciones juntos</h2>  
@@ -197,13 +218,16 @@
         <button class="buttonflecha" onclick="changeImage(-1)">&#10094;</button>  
         <button class="buttonflecha" onclick="changeImage(1)">&#10095;</button>  
     </div>  
-</div>  
+</div>
+
+
 <!--parrafo-->
 <div class="parrafofinal">
 <h2 class="card-title">Esto es casi todo </h2>
 <p class="card-title">Bueno mi vida esto lo arme para tener en algun lado las fotos que nos vamos sacando y tenerlos como recuerdos, Felices 6 meses espero que sean muchisimos mas te amo mucho y gracias por todo</p>
-<button id="deleteBtn">Si no te gusto se puede borrar la pagina haciendo click aca</button> 
+<button class="deleteBtn" id="deleteBtn">Si no te gusto se puede borrar la pagina haciendo click aca</button> 
 </div>
+
 <script>  
     document.getElementById('deleteBtn').addEventListener('click', function() {  
         Swal.fire({  
@@ -224,8 +248,59 @@
             }  
         });  
     });  
-</script>  
-
+</script> 
+<!--acordeon-->
+<H1></H1>
+<div class="accordion" id="accordionExample">  
+    <div class="accordion-item">  
+    <h2 class="accordion-header">  
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
+        Recuerdos Fav 1
+        </button>  
+    </h2>  
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">  
+        <div class="accordion-body">  
+          <strong>En esta imagen me gusta mucho como salimos y fue la primera foto que nos gusto mucho a los dos</strong>  
+          <div class="image-containerAcordion" id="imageOne">  
+            <img class="rounded float-end" src="./img/fc3.jpg" alt="Placeholder Image 1">  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+    <div class="accordion-item">  
+      <h2 class="accordion-header">  
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">  
+          Recuerdos Fav 2 
+        </button>  
+      </h2>  
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">  
+        <div class="accordion-body">  
+          <strong>Esta es imposible que no este porque es en tu lugar favorito jejejeje.
+          </strong> 
+          <strong>y mi lugar favorito es con vos...</strong> 
+          <div class="image-containerAcordion" id="imageTwo">  
+            <img class="rounded float-end" src="./img/IMG-20240818-WA0001.jpg" alt="Placeholder Image 2">  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+    <div class="accordion-item">  
+      <h2 class="accordion-header">  
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  
+          Recuerdos Fav 3 
+        </button>  
+      </h2>  
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">  
+        <div class="accordion-body">  
+          <strong>y esta imagen nose si es de las mejores pero es la que espero que siempre nos encontremos juntos y felices y en cualquier lugar</strong> 
+          <h1>Te Amo</h1> 
+          <div class="image-containerAcordion" id="imageThree">  
+            <img class="rounded float-end" src="./img/IMG-20241014-WA0000.jpg" alt="Placeholder Image 3">  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+</div> 
 <!--scripts-->
 <script src="script.js"></script>   
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
