@@ -1,0 +1,74 @@
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f9f9f9;  
+    color: #333;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+header {  
+    background-color: #ffcccb;  
+    text-align: center;  
+    padding: 20px;  
+}  
+
+h1 {  
+    margin: 0;
+    text-align: center;   
+}  
+
+main {  
+    padding: 20px;
+    text-align: center;   
+}  
+
+.mensaje, .galeria, .carta {  
+    margin-bottom: 30px;  
+    padding: 15px;  
+    background-color: #ffffff;  
+    border-radius: 8px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    align-items: center; 
+}  
+
+h2 {  
+    color: #e63946; 
+    text-align: center;  
+}  
+
+.galeria img {  
+    width: 30%;  
+    margin: 5px;  
+    border-radius: 8px;  
+}
+.slides {  
+    display: flex; /* Activar el uso de Flexbox */  
+    overflow-x: auto; /* Permitir desplazamiento horizontal */  
+    scroll-snap-type: x mandatory; /* Alineación en el desplazamiento */ 
+    align-items: center;  
+}  
+
+.image-container {  
+    width: 300px; /* Ancho del contenedor */  
+    height: 200px; /* Alto del contenedor */  
+    overflow: hidden; /* Oculta lo que sobresale */  
+    margin-right: 10px; /* Espaciado entre imágenes */  
+    scroll-snap-align: start; /* Alinear en el desplazamiento */
+    align-items: center;  
+}  
+
+.image-container img {  
+    width: 100%; /* La imagen llenará el contenedor */  
+    height: 100%; /* Alto fijo para llenar el contenedor */  
+    object-fit: contain; /* Cubre el contenedor manteniendo la proporción */  
+    border-radius: 10px; /* Bordes redondeados */ 
+    align-items: center; 
+}  
+footer {  
+    text-align: center;  
+    padding: 10px;  
+    background-color: #ffcccb;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
